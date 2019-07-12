@@ -76,6 +76,7 @@ INSERT INTO `docente` (`id`, `apellidos`, `email`, `nombres`) VALUES
 CREATE TABLE `docente_curso` (
   `id` int(11) NOT NULL,
   `horas` int(11) NOT NULL,
+  
   `curso_id` int(11) DEFAULT NULL,
   `docente_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -84,7 +85,7 @@ CREATE TABLE `docente_curso` (
 -- Volcado de datos para la tabla `docente_curso`
 --
 
-INSERT INTO `docente_curso` (`id`, `horas`, `curso_id`, `docente_id`) VALUES
+INSERT INTO `docente_curso` (`id`, `horas`,`curso_id`, `docente_id`) VALUES
 (1, 2, 4, 2),
 (2, 2, 5, 2),
 (3, 2, 6, 2),
